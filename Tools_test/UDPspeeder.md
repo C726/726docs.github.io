@@ -25,4 +25,3 @@ while true; do echo "Send data"; nc -u 239.0.0.1 1234 < /dev/zero; sleep 12; don
 > 网络正常Ping的延迟是250左右<br />
 > 阻塞网络之后，出现70%以上的丢包 <br />
 > 通过udpspeeder之后网络, 未出现丢包，但是有网络延迟较高的情况
-    
