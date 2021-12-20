@@ -1,3 +1,7 @@
+# Golang常用代码片段
+## Golang执行流程图
+![](/images/golang_running_flow.png)
+
 ## 时间格式化
 ```go
 time.now().Format("2006-01-02 15:04:05")
