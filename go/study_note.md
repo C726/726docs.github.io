@@ -1,4 +1,9 @@
 # Golang常用代码片段
+## 设置代理和LINUX编译
+```powershell
+$env:GOOS="linux"
+$env:GOPROXY="https://goproxy.cn"
+```
 ## Golang执行流程图
 ![](/images/golang_running_flow.png)
 
@@ -71,7 +76,7 @@ func (w *SyncWriter) Write(b []byte) (n int, err error) {
 	defer w.m.Unlock()
 	return w.Writer.Write(b)
 }
-
+// 作为其他参数写入数据需要os.O_WRONLY参数，否则写入会报错
 fl, e = os.OpenFile(*outputFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, os.ModeAppend)
 wr := &SyncWriter{}
 fmt.Fprintln(wr, "string")
