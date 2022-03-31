@@ -1,5 +1,6 @@
 # Tutor
 > https://github.com/keithvassallomt/windows10-ec2  
+> https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/enhanced-networking-ena.html  
 
 # aws document
 > https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/WindowsGuide/enhanced-networking-ena.html#enable-enhanced-networking-ena-WIN  
